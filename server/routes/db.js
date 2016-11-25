@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 var db = mongoose.connection;
-var dbNome = 'gabrielduartem-series-mean2-git-4078353';
+var dbNome = 'gabrielduartem-series-mean2-4078460';
 
 db.on('error', console.error);
 db.once('open', function() {

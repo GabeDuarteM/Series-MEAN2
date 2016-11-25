@@ -1,5 +1,12 @@
+// Atualizar o NPM (pré-requisito para o angular2)
 npm install npm@latest -g
+
+// Instalar e configurar o MongoDB (Obs.: Alterar o host no arquivo server/routes/db.js)
 sudo apt-get install -y mongodb-org
 mkdir data
 echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
 chmod a+x mongod
+
+// Instalar os pacotes NPM
+npm install --prefix ./client
+npm install --prefix ./server
