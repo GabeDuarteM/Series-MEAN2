@@ -1,0 +1,14 @@
+<h4 class="card-header">{{serie.nome}}</h4>
+<img class="img-fluid img-thumbnail banner hoverable" src="{{serie.bannerUrl}}" onError="this.src='./assets/placeholder.gif';">
+<div class="card-block">
+    <hr>
+    <div class="botoes">
+        <div class="btn-group" role="group">
+            <a class="btn btn-outline-primary botao waves-effect" target="_blank" href="{{'https://thetvdb.com/?tab=series&id=' + serie.idApi}}"><img class="tvdb-icon mx-auto" src="../assets/tvdb.png"></a>
+            <a class="btn btn-outline-primary botao waves-effect" (click)="favoritar($event)"><i [class.favorito]="serie.isFavorito" class="fa fa-star" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <hr>
+    <p class="card-text">{{serie.sinopse && serie.sinopse.length > 315 ? serie.sinopse.substring(0,315) + '[...]' : serie.sinopse}}</p>
+</div>
+    

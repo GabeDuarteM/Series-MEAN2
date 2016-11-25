@@ -1,0 +1,9 @@
+<div class="resultados" *ngIf="series.length > 0">
+  <div class="row">
+    <div *ngFor="let serieGroup of seriesView" class="card-group col-lg-12">
+      <app-resultado *ngFor="let serie of serieGroup" class="card" [serie]="serie"></app-resultado>
+      <div class="card card-placeholder" *ngIf="serieGroup && (serieGroup.length == 1 || serieGroup.length == 2)"></div>
+      <div class="card card-placeholder" *ngIf="serieGroup && serieGroup.length == 1"></div>
+    </div>
+  </div>
+</div>
