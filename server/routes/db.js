@@ -200,6 +200,6 @@ db.once('open', function() {
   });
 });
 
-mongoose.connect('mongodb://' + dbNome + '/series-mean2');
+mongoose.connect('mongodb://dbseries-mean:dbseries-mean@ds111188.mlab.com:11188/series-mean2');
 
 module.exports = router;
