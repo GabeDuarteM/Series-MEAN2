@@ -1,8 +1,6 @@
 #!/BIN/BASH
 
-trap 'kill %1; kill %2' SIGINT
-
-./mongod &
+trap 'kill %1' SIGINT
 
 cd server/ 
 npm start &
