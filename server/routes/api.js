@@ -4,13 +4,13 @@ var request = require('request');
 
 var baseUrl = 'https://api.thetvdb.com';
 
-router.get('/search/:nome', (req, res, next) => {
+router.get('/search/:nome', (req, res) => {
     checkToken(() => {
         searchSeries(req.params.nome, (data) => {
-            var json = JSON.parse(data).data || {} ;
+            var json = JSON.parse(data).data || {};
             res.json(json);
         });
-    })
+    });
 });
 
 var token = null;

@@ -3,46 +3,43 @@
     "version": "1.0.0-beta.19-3",
     "name": "client"
   },
-  "apps": [
-    {
-      "root": "src",
-      "outDir": "dist",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
-      "index": "views/index.html",
-      "main": "main.ts",
-      "test": "test.ts",
-      "tsconfig": "tsconfig.json",
-      "prefix": "app",
-      "mobile": false,
-      "styles": [
-        "styles.scss",
-        "../node_modules/tether/dist/css/tether.css",
-        "../node_modules/mdbootstrap/css/bootstrap.css",
-        "../node_modules/mdbootstrap/css/mdb.css",
-        "../node_modules/font-awesome/css/font-awesome.css"
-      ],
-      "scripts": [
-        "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/tether/dist/js/tether.js",
-        "../node_modules/mdbootstrap/js/bootstrap.js",
-        "../node_modules/mdbootstrap/js/mdb.js"
-      ],
-      "environments": {
-        "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
+  "apps": [{
+    "root": "src",
+    "outDir": "dist",
+    "assets": [
+      "assets",
+      "favicon.ico"
+    ],
+    "index": "views/index.html",
+    "main": "main.ts",
+    "test": "test.ts",
+    "tsconfig": "tsconfig.json",
+    "prefix": "app",
+    "mobile": false,
+    "styles": [
+      "styles.scss",
+      "../node_modules/tether/dist/css/tether.css",
+      "../node_modules/mdbootstrap/css/bootstrap.css",
+      "../node_modules/mdbootstrap/css/mdb.css",
+      "../node_modules/font-awesome/css/font-awesome.css"
+    ],
+    "scripts": [
+      "../node_modules/jquery/dist/jquery.js",
+      "../node_modules/tether/dist/js/tether.js",
+      "../node_modules/mdbootstrap/js/bootstrap.js",
+      "../node_modules/mdbootstrap/js/mdb.js"
+    ],
+    "environments": {
+      "source": "environments/environment.ts",
+      "dev": "environments/environment.ts",
+      "prod": "environments/environment.prod.ts"
     }
-  ],
+  }],
   "addons": [
     "../node_modules/font-awesome/fonts/*.+(otf|eot|svg|ttf|woff|woff2)",
     "../node_modules/mdbootstrap/font/*.+(otf|eot|svg|ttf|woff|woff2)"
   ],
-  "packages": [
-  ],
+  "packages": [],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"

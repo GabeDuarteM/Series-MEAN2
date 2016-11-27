@@ -1,0 +1,12 @@
+{
+    "tagname-lowercase": true,
+    "attr-value-double-quotes": true,
+    "attr-no-duplication": true,
+    "doctype-first": false,
+    "tag-pair": true,
+    "tag-self-close": true,
+    "id-unique": true,
+    "src-not-empty": true,
+    "head-script-disabled": true,
+    "alt-require": true
+}

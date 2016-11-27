@@ -1,0 +1,16 @@
+{
+    "bitwise": true,
+    "curly": true,
+    "eqeqeq": true,
+    "esversion": 6,
+    "freeze": true,
+    "futurehostile": true,
+    "maxparams": 4,
+    "nocomma": true,
+    "nonbsp": true,
+    "undef": true,
+    "unused": true,
+    "browser": true,
+    "module": true,
+    "node": true
+}

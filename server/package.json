@@ -1,24 +1,24 @@
 {
-  "name": "series-mean2-server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start": "nodemon server.js"
-  },
-  "author": "Gabriel Duarte",
-  "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "cookie-parser": "^1.4.3",
-    "ejs": "^2.5.2",
-    "express": "^4.14.0",
-    "mongoose": "^4.6.8",
-    "morgan": "^1.7.0",
-    "path": "^0.12.7",
-    "request": "^2.78.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.11.0"
-  }
+    "name": "series-mean2-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "author": "Gabriel Duarte",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.15.2",
+        "cookie-parser": "^1.4.3",
+        "ejs": "^2.5.2",
+        "express": "^4.14.0",
+        "mongoose": "^4.6.8",
+        "morgan": "^1.7.0",
+        "path": "^0.12.7",
+        "request": "^2.78.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.11.0"
+    }
 }

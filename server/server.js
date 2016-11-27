@@ -3,15 +3,15 @@ var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
- 
+
 var index = require('./routes/index');
 var db = require('./routes/db');
 var api = require('./routes/api');
- 
+
 var app = express();
 
 var PORT = process.env.PORT || 3000;
- 
+
 // view engine setup
 app.set('views', path.join(__dirname, '../client/src/views'));
 app.set('view engine', 'ejs');
@@ -23,20 +23,20 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../client/dist')));
- 
+
 app.use('/', index);
 app.use('/db/', db);
 app.use('/api/', api);
- 
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('404 Not Found');
     err.status = 404;
     next(err);
 });
- 
-var server = app.listen(PORT, function() {
+
+app.listen(PORT, function() {
     console.log('Servidor iniciado na porta ' + PORT);
 });
- 
+
 module.exports = app;
